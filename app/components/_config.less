@@ -1,0 +1,82 @@
+// _config.less
+// GENERAL CSS CONFIG
+
+::selection {
+    background-color: @accent-color;
+	color: #fff;
+}
+	
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+	font-family: @user-font;
+	font-size: @font-size;
+	line-height: @line-height;
+	color: @text-color;
+
+	@media (max-width: 1360px) {
+        font-size: calc(14px + 0.3vw);
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: @user-font;
+	font-weight: 700;
+}
+
+p {
+    font-family: @user-font;
+	line-height: @line-height;
+	font-weight: 400;
+	color: @text-color;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+    color: @link-color;
+    text-decoration: none;
+}
+
+input {
+    border: 0;
+	outline: 0;
+}
+
+ul {
+	list-style: none;
+}
+
+.page {
+    background-color: @body-color;
+	width: 100%;
+    min-width: 320px;
+	position: relative;
+	overflow-x: hidden;
+}
+
+.main {
+    width: 100%;
+	margin: 0;
+	overflow: hidden;
+}
+
+.section {
+    width: 100%;
+	margin-bottom: 144px;
+}
+
+.container {
+    width: 100%;
+	max-width: calc(1320px + @container-horizontal-offset * 2);
+	margin: auto;
+	padding: 0px @container-horizontal-offset;
+    box-sizing: border-box;
+
+    &_small {
+        max-width: calc(872px + @container-horizontal-offset * 2);
+    }	
+}

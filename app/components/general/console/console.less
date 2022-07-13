@@ -1,0 +1,41 @@
+// console.less
+
+.console {
+    display: inline-block;
+    font-size: 0.88rem;
+
+    @keyframes cursor {
+        0%, 100% {
+            opacity: 0.0;
+        }
+        10% {
+            opacity: 0.0;
+        }
+        40% {
+            opacity: 1.0;
+        }
+        60% {
+            opacity: 1.0;
+        }
+        90% {
+            opacity: 0.0;
+        }
+    }
+
+    b {
+        color: @accent-color;
+    }
+    
+    i {
+        color: @accent2-color;
+    }
+
+    &__command {
+        display: inline-block;
+        animation: cursor 1.5s infinite ease-out;
+    }
+
+    img {
+        height: 0.88rem;
+    }
+}
